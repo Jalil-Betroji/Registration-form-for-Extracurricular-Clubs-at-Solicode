@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Lora:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    max-width: 100%;
+}
+
+/* ============== Title & paragraph_Styling ================== */
+
+h1 {
+    text-align: center;
+    font-family: "Lora";
+    margin:2rem auto;
+    grid-column: 4/10;
+    background-color: #00fff2;
+    max-width: 63rem;
+    height: 2rem;
+    border-radius: 2rem;
+}
+p{
+    grid-column: 4/8;
+    color: #b41010;
+    font-size: 14px;
+    max-width: 40%;
+}
+
+/* ============== Header styling ================== */
+
+header {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(24,1.5rem);
+}
+header img {
+    width: 100%;
+   grid-column: 1/-1;
+}
+header button {
+    grid-column: 6/8;
+    grid-row: 19/21;
+    border-radius: 0 40px 0 40px;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #00fff2;
+    cursor: pointer;
+}
+header button:hover {
+    color: white;
+    background-color: blueviolet;
+} 
+
+/* ================= Hide_Section ====================*/
+
+section {
+    display: none;
+}
+
+/* ================= Information_submit_styling =============== */
+
+form {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    max-width: 80%;
+    background-color: #8c7c6c;
+    border-radius: 2rem;
+    margin:0 auto;
+}
+form #info , #contact {
+    grid-column: 5/12;
+}
+form input {
+    margin: 1rem 3rem 0 0;
+    width: 57%;
+    height: 3rem;
+    background-color: #e7e7e7;
+    outline: none;
+    border:none;
+    border-radius: 5rem;
+}
+::placeholder {
+    padding-left: 1rem;
+    color: black;
+    font-weight: bold;
+}
+#gender ,#dw {
+    grid-column: 5/12;
+}
+#dw {
+    margin-top: 1rem;
+}
+.group {
+    width: 1rem;
+    height: 1rem;
+}
+#Male , #Female {
+    width: 1rem;
+    height: 1rem;
+}
+select {
+    width: 40%;
+    color: #0c0c0c;
+    background-color: #bbbbbb;
+    border: none;
+    height: 55%;
+    border-radius: 10px;
+    text-align: center;
+}
+option {
+    padding: 10px 0;
+}
+#Informatique , #Robotique , #Jeu_déchecs , #Musique , #Foot , #Théatre {
+    width: 1rem;
+    height: 1rem;
+}
+#submit_btn {
+    width: 80%;
+    height: 2rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 5rem;
+    background-color: #00fff2;
+} 
+
+/* =========== Media_Query =========== */
+
+@media screen and (max-width:429px) {
+    
+}

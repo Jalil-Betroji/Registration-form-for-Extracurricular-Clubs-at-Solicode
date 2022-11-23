@@ -139,4 +139,4 @@ joinbtn.addEventListener("click", (e) => {
 document.getElementById("Male").type = "radio";
 document.getElementById("Female").type = "radio";
 document.getElementById("V_Phone").type = "number";
-document.getElementsByClassName(".group").type = "radio";
+document.getElementsByClassName(".group").type="radio";

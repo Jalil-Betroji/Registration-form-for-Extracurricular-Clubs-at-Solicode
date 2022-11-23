@@ -8,19 +8,25 @@
 }
 body {
     max-width: 100%;
+    background-image: url(img/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
 }
-
 /* ============== Title & paragraph_Styling ================== */
 
 h1 {
     text-align: center;
     font-family: "Lora";
-    margin:2rem auto;
-    grid-column: 4/10;
+    margin:2rem 0;
     background-color: #00fff2;
-    max-width: 63rem;
+    width: 30rem;
     height: 2rem;
     border-radius: 2rem;
+}
+h2 {
+    font-family: "Lora";
+    margin: 1rem 0;
 }
 p{
     grid-column: 4/8;
@@ -58,6 +64,9 @@ header button:hover {
 /* ================= Hide_Section ====================*/
 
 section {
+    position: absolute;
+    top: 5rem;
+    left: 30%;
     display: none;
 }
 
@@ -66,17 +75,17 @@ section {
 form {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    max-width: 80%;
-    background-color: #8c7c6c;
+    max-width: 50%;
+    color: white;
+    background-color: rgba(112, 189, 173, 0.2);
     border-radius: 2rem;
-    margin:0 auto;
 }
 form #info , #contact {
-    grid-column: 5/12;
+    grid-column: 5/10;
 }
 form input {
     margin: 1rem 3rem 0 0;
-    width: 57%;
+    width:27rem;
     height: 3rem;
     background-color: #e7e7e7;
     outline: none;
@@ -97,10 +106,12 @@ form input {
 .group {
     width: 1rem;
     height: 1rem;
+    margin:0 0.2rem;
 }
 #Male , #Female {
     width: 1rem;
     height: 1rem;
+    margin:  1rem 0.2rem;
 }
 select {
     width: 40%;
@@ -119,13 +130,19 @@ option {
     height: 1rem;
 }
 #submit_btn {
-    width: 80%;
     height: 2rem;
+    grid-column: 5/10;
     margin: 1rem 0;
+    font-weight: 900;
     border: none;
     border-radius: 5rem;
     background-color: #00fff2;
 } 
+#Clubs {
+    grid-column: 5/12;
+}
+
+
 
 /* =========== Media_Query =========== */
 

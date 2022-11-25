@@ -8,7 +8,6 @@
 }
 body {
     max-width: 100%;
-    background-image: url(img/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -17,10 +16,11 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 1.4rem;
     font-family: "Lora";
     margin:2rem 0;
     background-color: #00fff2;
-    width: 30rem;
+    width: 33rem;
     height: 2rem;
     border-radius: 2rem;
 }
@@ -29,7 +29,7 @@ h2 {
     margin: 1rem 0;
 }
 p{
-    grid-column: 4/8;
+    grid-column: 2/8;
     color: #b41010;
     font-size: 14px;
     max-width: 40%;
@@ -65,23 +65,23 @@ header button:hover {
 
 section {
     position: absolute;
-    top: 5rem;
     left: 30%;
     display: none;
-}
+} 
 
 /* ================= Information_submit_styling =============== */
 
 form {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    max-width: 50%;
-    color: white;
+    grid-template-columns: repeat(12,3rem);
+    max-width: 91%;
+    font-weight: 500;
+    color: #ffffff;
     background-color: rgba(112, 189, 173, 0.2);
     border-radius: 2rem;
 }
 form #info , #contact {
-    grid-column: 5/10;
+    grid-column: 2/10;
 }
 form input {
     margin: 1rem 3rem 0 0;
@@ -91,14 +91,14 @@ form input {
     outline: none;
     border:none;
     border-radius: 5rem;
+    padding-left: 1rem;
 }
 ::placeholder {
-    padding-left: 1rem;
     color: black;
     font-weight: bold;
 }
 #gender ,#dw {
-    grid-column: 5/12;
+    grid-column: 2/12;
 }
 #dw {
     margin-top: 1rem;
@@ -131,7 +131,7 @@ option {
 }
 #submit_btn {
     height: 2rem;
-    grid-column: 5/10;
+    grid-column: 2/10;
     margin: 1rem 0;
     font-weight: 900;
     border: none;
@@ -139,13 +139,10 @@ option {
     background-color: #00fff2;
 } 
 #Clubs {
-    grid-column: 5/12;
+    grid-column: 2/12;
 }
-
-
-
-/* =========== Media_Query =========== */
-
-@media screen and (max-width:429px) {
-    
+.Clubs {
+    width: 88%;
+    outline: none;
+    background-color: #ffffff74;
 }

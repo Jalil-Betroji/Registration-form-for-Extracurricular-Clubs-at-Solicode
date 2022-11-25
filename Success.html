@@ -3,7 +3,7 @@
     <head > 
         <meta charset="UTF-8" > 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
-        <title > Document</title > 
+        <title > Solicode Game</title > 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900 &display=swap" rel="stylesheet" > 
     </head > 
     <style >
@@ -11,33 +11,29 @@
     text-align: center;
     padding: 40px 0;
     max-width: 100%;
-    background-image: url('img/background.jpeg');
+    background-image: url('img/backg.PNG');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
 }
-h1 {
-    color: #fdfdfd;
-    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-    font-weight: 900;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
+section {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    z-index: 1;
+} 
 p {
     color: #f8f8f8;
     font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
-    margin: 0;
+    margin: 2rem 0;
 }
 i {
     color: #0022e5;
     font-size: 100px;
     line-height: 200px;
-    margin-left: -15px;
 }
 .card {
-    position: absolute;
-    left: 40%;
     background: rgba(85, 87, 85, 0.4);
     padding: 60px;
     border-radius: 4px;
@@ -46,13 +42,15 @@ i {
 }
 </style> 
 <body> 
+    <section>
     <div class="card"> 
-    <div style="border-radius:200px; height:200px; width:200px; background: #2ecc0a; margin:0 auto;"> <i class="checkmark">✓</i> 
-    </div> <h1>Success</h1> <p>Congratulation <br/>Your regestration submited</p> 
+    <div style="border-radius:200px; height:200px; width:200px; background: #2ecc0a; margin:0 auto;"> 
+        <i class="checkmark">✓</i> 
+    </div><p>Congratulation <br/>Your regestration submited</p> 
     </div> 
+    </section>  
     <div id="particles-js"></div> 
     <script src="js/particles.min.js"></script> 
     <script src="js/app.js"></script> 
-    
 </body> 
 </html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solicode Game</title>
+        
+    </head>
+    <body>
  <header>
         <img src="img/Homepageimg.png" alt="home page picture">
         <button id="page_btn">Join Now</button>
@@ -15,10 +16,10 @@
         <h1>Please fulfill your information below</h1>
         <form>
             <div id="info">
-            <input type = "text"  name = "fname" id="F_Name" placeholder="First Name" maxlength="15">
+            <input type = "text"  name = "fname" id="F_Name" placeholder="First Name" >
             <p id="First_name"></p>
 
-            <input type = "text" name = "lname" id="L_Name" placeholder="Last Name" maxlength="15">
+            <input type = "text" name = "lname" id="L_Name" placeholder="Last Name" >
             <p id="last_name"></p>
             </div>
             <div id="contact">
@@ -71,5 +72,10 @@
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/main1.js"></script>
+    <script>
+        document.getElementById("Male").type = "radio";
+        document.getElementById("Female").type = "radio";
+        document.getElementById("V_Phone").type = "number";
+    </script>
 </body>
 </html>

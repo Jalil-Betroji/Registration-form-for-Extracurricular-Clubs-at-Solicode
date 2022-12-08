@@ -126,10 +126,7 @@ select {
 option {
     padding: 10px 0;
 }
-#Informatique , #Robotique , #Jeu_déchecs , #Musique , #Foot , #Théatre {
-    width: 1rem;
-    height: 1rem;
-}
+
 #submit_btn {
     height: 2rem;
     grid-column: 2/10;

@@ -48,11 +48,12 @@ header img {
 }
 header button {
     grid-column: 6/8;
-    grid-row: 19/21;
+    grid-row: 20/21;
     border-radius: 0 40px 0 40px;
     color: black;
     font-size: 32px;
     font-weight: 700;
+    height: 3rem;
     background-color: #00fff2;
     cursor: pointer;
 }
